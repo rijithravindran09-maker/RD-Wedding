@@ -3,112 +3,260 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Rijith &amp; Dhanusha · Sunday, 6 December 2026 · Exora Convention Center, Talap, Kannur">
-<meta property="og:title" content="Rijith &amp; Dhanusha · Wedding Invitation">
+<title>Rijith & Dhanusha</title>
+<meta name="description" content="Rijith & Dhanusha · Sunday, 6 December 2026 · Exora Convention Center, Talap, Kannur">
+<meta property="og:title" content="Rijith & Dhanusha · Wedding Invitation">
 <meta property="og:description" content="Sunday, 6 December 2026 · Muhurtham 11:30 AM – 12:00 PM · Exora Convention Center, Talap, Kannur">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#EDF1EA">
-<title>Rijith &amp; Dhanusha · Wedding Invitation</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,400;1,6..96,500&family=Jost:wght@300;400;500&display=swap">
+<meta name="theme-color" content="#2F5A3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Tenor+Sans&family=Manjari:wght@400;700&display=swap">
 <style>
-/* Layout: modern editorial, left-aligned; a strand of jasmine (mulla) falls down the right edge; oversized date numerals anchor the details. */
+/* Layout: one narrow column like a folded invitation, opening under a mango-leaf thoranam with a lit nilavilakku; kasavu bands divide each fold. */
 :root{
-  --bg:#EDF1EA; --card:#F8FAF5; --ink:#22342B; --muted:#5E7065; --rose:#C9817C; --sage:#8DA592; --bud:#FFFFFF;
-  --display:"Bodoni Moda","Didot",Georgia,serif; --sans:"Jost","Futura","Helvetica Neue",sans-serif;
+  --ivory:#F6EFDF; --paper:#FBF7EC; --ink:#4A2A1A; --muted:#7A5C45;
+  --gold:#B08227; --gold-lt:#E2C477; --leaf:#2F5A3A; --leaf-lt:#4E7F4F;
+  --script:"Pinyon Script","Great Vibes",cursive;
+  --serif:"Cormorant Garamond","EB Garamond",Georgia,serif;
+  --label:"Tenor Sans","Gill Sans",sans-serif;
+  --ml:"Manjari","Noto Sans Malayalam",sans-serif;
   color-scheme:light;
 }
 *{box-sizing:border-box}
-body{background:var(--bg); color:var(--ink); font-family:var(--sans); font-weight:300; font-size:17px; line-height:1.6; overflow-x:hidden}
-.page{max-width:620px; margin:0 auto; padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px)); position:relative}
-.strand{position:absolute; top:0; right:-6px; width:70px; height:100%; pointer-events:none}
-.content{padding-right:58px; position:relative; z-index:1}
-.hero{padding-block:56px 30px}
-.tag{font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:var(--rose); font-weight:500; margin:0 0 18px}
-h1{margin:0; font-family:var(--display); font-style:italic; font-weight:400; font-size:clamp(62px,18vw,104px); line-height:.92; letter-spacing:-.02em; text-wrap:balance}
-h1 em{display:block; font-size:.42em; color:var(--sage); font-style:italic; margin:.2em 0 .1em .1em}
-.sub{margin:22px 0 0; color:var(--muted); max-width:34ch}
-.date{display:grid; grid-template-columns:auto 1fr; gap:4px 18px; align-items:end; padding-block:30px; border-top:1px solid rgba(34,52,43,.15); border-bottom:1px solid rgba(34,52,43,.15); margin-block:16px}
-.date .num{font-family:var(--display); font-style:italic; font-size:clamp(84px,24vw,130px); line-height:.8; color:var(--rose); grid-row:span 2}
-.date .mo{font-size:14px; letter-spacing:.3em; text-transform:uppercase; font-weight:500}
-.date .dy{color:var(--muted)}
-.block{padding-block:26px; display:flex; flex-direction:column; gap:10px}
-.block h2{margin:0; font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:var(--sage); font-weight:500}
-.block p{margin:0; max-width:36ch}
-.block .name{font-family:var(--display); font-style:italic; font-size:30px; line-height:1.2}
-.block .muted{color:var(--muted); font-size:15px}
-.cards{display:grid; grid-template-columns:1fr 1fr; gap:12px}
-@media (max-width:440px){.cards{grid-template-columns:1fr}}
-.card{background:var(--card); border-radius:2px; padding:18px; display:flex; flex-direction:column; gap:4px; min-width:0}
-.card .k{font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:var(--rose); font-weight:500}
-.card .v{font-family:var(--display); font-style:italic; font-size:24px; line-height:1.2}
-.card .s{color:var(--muted); font-size:14.5px}
-.count{display:flex; gap:26px; font-variant-numeric:tabular-nums}
-.count b{display:block; font-family:var(--display); font-style:italic; font-weight:400; font-size:38px; line-height:1}
-.count span{font-size:11px; letter-spacing:.25em; text-transform:uppercase; color:var(--muted)}
-.actions{display:flex; flex-wrap:wrap; gap:10px}
-.btn{font-family:var(--sans); font-size:13px; letter-spacing:.18em; text-transform:uppercase; font-weight:500; text-decoration:none; padding:13px 22px; color:var(--bud); background:var(--ink); border:1px solid var(--ink)}
-.btn.line{background:transparent; color:var(--ink)}
-.btn:focus-visible{outline:2px solid var(--rose); outline-offset:3px}
-footer{padding-block:26px 56px}
-footer p{font-family:var(--display); font-style:italic; font-size:24px; line-height:1.3; margin:0; max-width:22ch}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ivory); color:var(--ink); font-family:var(--serif); font-size:19px; line-height:1.55;
+  background-image:radial-gradient(circle at 20% 10%, rgba(226,196,119,.18), transparent 40%),
+                   radial-gradient(circle at 85% 70%, rgba(226,196,119,.14), transparent 45%);
+  overflow-x:hidden;
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+#petals{position:fixed; inset:0; width:100%; height:100%; pointer-events:none; z-index:5}
+.wrap{max-width:560px; margin:0 auto; padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px)); position:relative; z-index:2}
+
+/* thoranam */
+.thoranam{display:block; width:100%; height:auto; max-width:100%}
+.thoranam-wrap{position:relative; z-index:3; margin-bottom:-8px}
+
+/* kasavu band */
+.kasavu{height:16px; margin:0 auto; width:100%;
+  background:
+    radial-gradient(circle, var(--gold) 1.6px, transparent 2px) 0 50%/14px 16px repeat-x,
+    linear-gradient(to bottom, var(--gold) 0 2px, transparent 2px 4px, var(--gold-lt) 4px 5px, transparent 5px 11px, var(--gold-lt) 11px 12px, transparent 12px 14px, var(--gold) 14px 16px);
+  opacity:.9}
+
+/* cover */
+.cover{text-align:center; padding-block:12px 40px; display:flex; flex-direction:column; align-items:center; gap:14px}
+.ml{font-family:var(--ml); color:var(--leaf); font-size:15px; letter-spacing:.06em}
+.lamp{width:96px; height:auto}
+.flame{transform-box:fill-box; transform-origin:50% 100%; animation:flicker 2.2s ease-in-out infinite}
+.flame:nth-of-type(2){animation-delay:-.6s}.flame:nth-of-type(3){animation-delay:-1.3s}.flame:nth-of-type(4){animation-delay:-.2s}
+@keyframes flicker{0%,100%{transform:scale(1,1) rotate(0)}30%{transform:scale(.92,1.08) rotate(-3deg)}60%{transform:scale(1.05,.94) rotate(2deg)}}
+.glow{animation:glow 3s ease-in-out infinite}
+@keyframes glow{50%{opacity:.55}}
+.eyebrow{font-family:var(--label); text-transform:uppercase; letter-spacing:.32em; font-size:12px; color:var(--muted)}
+.names{font-family:var(--script); font-weight:400; color:var(--ink); line-height:1; margin:0; display:flex; flex-direction:column; align-items:center}
+.names .n{font-size:clamp(64px,17vw,96px); animation:rise 1.4s cubic-bezier(.2,.7,.2,1) both}
+.names .n:last-child{animation-delay:.35s}
+.names .amp{font-family:var(--serif); font-style:italic; font-size:22px; color:var(--gold); margin-block:4px 2px; animation:rise 1.4s .18s both}
+@keyframes rise{from{opacity:.0; transform:translateY(14px)}to{opacity:1; transform:none}}
+@media (prefers-reduced-motion:reduce){.names .n,.names .amp,.flame,.glow{animation:none}}
+.date-line{font-family:var(--label); letter-spacing:.28em; font-size:15px; color:var(--leaf); display:flex; align-items:center; gap:14px}
+.date-line::before,.date-line::after{content:""; width:34px; height:1px; background:var(--gold)}
+.open{margin-top:10px; font:inherit; font-family:var(--label); font-size:13px; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--paper); background:var(--leaf); border:1px solid var(--gold); padding:13px 26px; border-radius:999px; cursor:pointer;
+  box-shadow:0 0 0 4px var(--ivory), 0 0 0 5px var(--gold-lt); text-decoration:none}
+.open:hover{background:var(--leaf-lt)}
+.open:focus-visible,.btn:focus-visible{outline:2px solid var(--gold); outline-offset:4px}
+
+/* folds */
+.fold{text-align:center; padding-block:44px; display:flex; flex-direction:column; align-items:center; gap:18px}
+.parents{font-size:21px; margin:0}
+.parents b{font-weight:600}
+.home{font-style:italic; color:var(--muted); font-size:17px; margin:0}
+.prose{max-width:30ch; margin:0; font-size:20px; text-wrap:balance}
+.groom,.bride{font-family:var(--script); font-size:clamp(54px,14vw,76px); line-height:1.05; margin:0; color:var(--ink)}
+.with{font-family:var(--serif); font-style:italic; color:var(--gold); font-size:24px; margin:-6px 0}
+.motif{width:120px; height:auto}
+
+/* details */
+.details{display:grid; gap:14px; width:100%}
+.detail{background:var(--paper); border:1px solid rgba(176,130,39,.45); border-radius:4px; padding:20px 18px; display:grid; grid-template-columns:44px 1fr; gap:14px; text-align:left; align-items:center;
+  box-shadow:inset 0 0 0 4px var(--paper), inset 0 0 0 5px rgba(226,196,119,.6)}
+.detail svg{width:30px; height:30px; justify-self:center; color:var(--leaf)}
+.detail .k{font-family:var(--label); text-transform:uppercase; letter-spacing:.2em; font-size:11px; color:var(--muted)}
+.detail .v{font-size:21px; font-weight:600; line-height:1.25}
+.detail .s{font-size:17px; color:var(--muted); line-height:1.35}
+
+/* countdown */
+.count{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; width:100%; max-width:420px}
+.cell{display:flex; flex-direction:column; align-items:center; gap:2px; padding-block:12px; border-top:1px solid var(--gold-lt); border-bottom:1px solid var(--gold-lt)}
+.cell b{font-family:var(--serif); font-weight:500; font-size:clamp(30px,9vw,40px); font-variant-numeric:tabular-nums; line-height:1; color:var(--leaf)}
+.cell span{font-family:var(--label); font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted)}
+
+.actions{display:flex; flex-wrap:wrap; gap:12px; justify-content:center}
+.btn{display:inline-flex; align-items:center; gap:8px; font-family:var(--label); font-size:12.5px; letter-spacing:.16em; text-transform:uppercase; text-decoration:none;
+  padding:12px 20px; border-radius:999px; border:1px solid var(--gold); color:var(--ink); background:var(--paper)}
+.btn.primary{background:var(--leaf); color:var(--paper)}
+.btn:hover{border-color:var(--leaf)}
+.btn svg{width:16px; height:16px}
+
+.closing{font-size:21px; font-style:italic; max-width:28ch; margin:0; text-wrap:balance}
+.sign{font-family:var(--script); font-size:34px; color:var(--gold); margin:0}
+footer{padding-block:10px 40px}
 </style>
+
 </head>
 <body>
 
-<div class="page">
-  <svg class="strand" id="strand" aria-hidden="true"></svg>
-  <div class="content">
-    <header class="hero">
-      <p class="tag">You're invited to the wedding of</p>
-      <h1>Rijith <em>&amp;</em> Dhanusha</h1>
-      <p class="sub">With the blessings of our families, we warmly invite you and your family to celebrate with us.</p>
-    </header>
+<canvas id="petals" aria-hidden="true"></canvas>
 
-    <div class="date">
-      <span class="num">06</span>
-      <span class="mo">December 2026</span>
-      <span class="dy">Sunday · Muhurtham 11:30 AM – 12:00 PM</span>
+<div class="thoranam-wrap"><svg class="thoranam" id="thoranam" viewBox="0 0 600 110" preserveAspectRatio="xMidYMin slice" aria-hidden="true"></svg></div>
+
+<main class="wrap">
+  <section class="cover" id="top">
+    <p class="ml" lang="ml">വിവാഹ ക്ഷണം</p>
+    <svg class="lamp" viewBox="0 0 120 200" role="img" aria-label="A lit traditional lamp">
+      <defs>
+        <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#8C6420"/><stop offset=".45" stop-color="#E2C477"/><stop offset="1" stop-color="#9A6E22"/></linearGradient>
+        <radialGradient id="halo"><stop offset="0" stop-color="#F6C453" stop-opacity=".55"/><stop offset="1" stop-color="#F6C453" stop-opacity="0"/></radialGradient>
+        <linearGradient id="fl" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#E0761E"/><stop offset=".5" stop-color="#F6B83C"/><stop offset="1" stop-color="#FFF1B8"/></linearGradient>
+      </defs>
+      <ellipse class="glow" cx="60" cy="70" rx="58" ry="40" fill="url(#halo)"/>
+      <g fill="url(#fl)">
+        <path class="flame" d="M26 86 C32 76 30 64 26 56 C22 64 20 76 26 86Z"/>
+        <path class="flame" d="M43 86 C49 75 47 62 43 53 C39 62 37 75 43 86Z"/>
+        <path class="flame" d="M77 86 C83 75 81 62 77 53 C73 62 71 75 77 86Z"/>
+        <path class="flame" d="M94 86 C100 76 98 64 94 56 C90 64 88 76 94 86Z"/>
+      </g>
+      <g fill="url(#g)">
+        <path d="M57 86 V58 Q60 52 63 58 V86Z"/>
+        <circle cx="60" cy="50" r="5"/>
+        <path d="M60 30 Q64 40 60 45 Q56 40 60 30Z"/>
+        <path d="M16 86 H104 Q98 104 60 107 Q22 104 16 86Z"/>
+        <rect x="55" y="106" width="10" height="64"/>
+        <ellipse cx="60" cy="122" rx="10" ry="3.5"/>
+        <ellipse cx="60" cy="142" rx="12" ry="4"/>
+        <ellipse cx="60" cy="160" rx="10" ry="3.5"/>
+        <path d="M28 190 Q60 160 92 190Z"/>
+        <ellipse cx="60" cy="190" rx="34" ry="5"/>
+      </g>
+    </svg>
+    <p class="eyebrow">The wedding of</p>
+    <h1 class="names"><span class="n">Rijith</span><span class="amp">&amp;</span><span class="n">Dhanusha</span></h1>
+    <p class="date-line">06 · 12 · 2026</p>
+    <a class="open" href="#invite">Open the invitation</a>
+  </section>
+
+  <div class="kasavu" role="presentation"></div>
+
+  <section class="fold" id="invite">
+    <p class="eyebrow">With the blessings of our elders</p>
+    <p class="parents">We, <b>Premalatha Ravindran</b> &amp; Late <b>Ravindran</b></p>
+    <p class="home">Ravi Nikethan (H), Karatvayal, Kanhangad</p>
+    <p class="prose">by the grace of God and with the blessings of our beloved parents, warmly invite you and your family to join us in celebrating the marriage of our son</p>
+    <p class="groom">Rijith</p>
+    <p class="with">with</p>
+    <p class="bride">Dhanusha</p>
+    <p class="parents" style="font-size:19px">D/o <b>Santhosh Kumar K</b> &amp; <b>Leena K T</b></p>
+    <p class="home">Kalikot (H), Chalad, Kannur</p>
+  </section>
+
+  <div class="kasavu" role="presentation"></div>
+
+  <section class="fold" id="details">
+    <p class="eyebrow">The muhurtham</p>
+    <div class="details">
+      <div class="detail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg>
+        <div><div class="k">Date</div><div class="v">Sunday, 6 December 2026</div></div>
+      </div>
+      <div class="detail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg>
+        <div><div class="k">Muhurtham</div><div class="v">11:30 AM – 12:00 PM</div><div class="s">Indian Standard Time</div></div>
+      </div>
+      <div class="detail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>
+        <div><div class="k">Venue</div><div class="v">Exora Convention Center</div><div class="s">Near Govt. Talap Mixed UP School, Talap, Kannur</div></div>
+      </div>
     </div>
 
-    <section class="block">
-      <h2>From the family of the groom</h2>
-      <p class="name">Premalatha Ravindran &amp; Late Ravindran</p>
-      <p class="muted">Ravi Nikethan (H), Karatvayal, Kanhangad</p>
-      <p>By the grace of God and with the blessings of our beloved parents, we invite you to the marriage of our son <b style="font-weight:500">Rijith</b> with <b style="font-weight:500">Dhanusha</b>,</p>
-      <p class="muted">D/o Santhosh Kumar K &amp; Leena K T · Kalikot (H), Chalad, Kannur</p>
-    </section>
+    <p class="eyebrow" style="margin-top:14px" id="count-label">Counting down to the day</p>
+    <div class="count" aria-labelledby="count-label">
+      <div class="cell"><b id="cd-d">--</b><span>Days</span></div>
+      <div class="cell"><b id="cd-h">--</b><span>Hours</span></div>
+      <div class="cell"><b id="cd-m">--</b><span>Mins</span></div>
+      <div class="cell"><b id="cd-s">--</b><span>Secs</span></div>
+    </div>
 
-    <section class="block">
-      <h2>The day</h2>
-      <div class="cards">
-        <div class="card"><span class="k">Muhurtham</span><span class="v">11:30 AM – 12:00 PM</span><span class="s">Sunday, 6 December 2026</span></div>
-        <div class="card"><span class="k">Venue</span><span class="v">Exora Convention Center</span><span class="s">Near Govt. Talap Mixed UP School, Talap, Kannur</span></div>
-      </div>
-      <div class="count" aria-label="Time until the muhurtham"><div><b id="d">--</b><span>Days</span></div><div><b id="h">--</b><span>Hours</span></div><div><b id="m">--</b><span>Mins</span></div></div>
-      <div class="actions">
-        <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Wedding%20of%20Rijith%20%26%20Dhanusha&amp;dates=20261206T060000Z/20261206T063000Z&amp;location=Exora%20Convention%20Center%2C%20Talap%2C%20Kannur">Save the date</a>
-        <a class="btn line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Exora%20Convention%20Center%20Talap%20Kannur">Directions</a>
-      </div>
-    </section>
+    <div class="actions">
+      <a class="btn primary" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Wedding%20of%20Rijith%20%26%20Dhanusha&amp;dates=20261206T060000Z/20261206T063000Z&amp;details=Muhurtham%2011%3A30%20AM%20-%2012%3A00%20PM%20IST&amp;location=Exora%20Convention%20Center%2C%20Talap%2C%20Kannur">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 9.5h17M12 12.5v5M9.5 15h5"/></svg>Save the date</a>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Exora%20Convention%20Center%20Talap%20Kannur">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Directions</a>
+    </div>
+  </section>
 
-    <footer><p>Your presence and blessings will make our day complete.</p></footer>
-  </div>
-</div>
+  <div class="kasavu" role="presentation"></div>
+
+  <footer class="fold">
+    <svg class="motif" viewBox="0 0 120 30" aria-hidden="true"><path d="M0 15H44M76 15H120" stroke="#B08227" stroke-width="1"/><path d="M60 3 L68 15 L60 27 L52 15Z" fill="none" stroke="#B08227" stroke-width="1.2"/><circle cx="60" cy="15" r="2.5" fill="#2F5A3A"/></svg>
+    <p class="closing">Your presence and blessings will make our day complete.</p>
+    <p class="sign">with love, the families</p>
+    <a class="btn" href="#top">Back to top</a>
+  </footer>
+</main>
 
 <script>
 (function(){
-  // Jasmine strand: white buds strung along a gently swaying thread, with a few rose petals
-  var s=document.getElementById('strand'), H=document.querySelector('.page').offsetHeight, o='';
-  s.setAttribute('viewBox','0 0 70 '+H);
-  var pts=[]; for(var y=0;y<H;y+=6){pts.push([35+Math.sin(y/90)*14, y]);}
-  o+='<path d="M'+pts.map(function(p){return p[0].toFixed(1)+' '+p[1]}).join(' L')+'" fill="none" stroke="#8DA592" stroke-width="1"/>';
-  for(var i=0;i<pts.length;i+=2){var p=pts[i], side=(i/2)%2?1:-1, rot=side*55;
-    o+='<g transform="translate('+p[0].toFixed(1)+' '+p[1]+') rotate('+rot+')"><path d="M0 0 C4 -3 4 -11 0 -15 C-4 -11 -4 -3 0 0Z" fill="#FFFFFF" stroke="#D8DED3" stroke-width=".6"/></g>';
-    if(i%26===0) o+='<circle cx="'+(p[0]+side*3).toFixed(1)+'" cy="'+(p[1]+3)+'" r="2.6" fill="#C9817C"/>';}
-  s.innerHTML=o;
-  var target=new Date('2026-12-06T11:30:00+05:30').getTime(), d=document.getElementById('d'),h=document.getElementById('h'),m=document.getElementById('m');
-  function tick(){var x=Math.max(0,Math.floor((target-Date.now())/1000)); d.textContent=Math.floor(x/86400); h.textContent=String(Math.floor(x%86400/3600)).padStart(2,'0'); m.textContent=String(Math.floor(x%3600/60)).padStart(2,'0');}
-  tick(); setInterval(tick,30000);
+  // Thoranam: mango leaves on a gold cord, alternating with marigold buds
+  var svg=document.getElementById('thoranam'), ns='http://www.w3.org/2000/svg', W=600, n=19, out='';
+  out+='<path d="M0 8 Q300 26 600 8" fill="none" stroke="#B08227" stroke-width="2"/>';
+  for(var i=0;i<n;i++){
+    var x=(i+0.5)*W/n, t=x/W, y=8+2*(1-t)*t*18;
+    var len=58+ (i%2?10:0), rot=(i%2?4:-4);
+    out+='<g transform="translate('+x.toFixed(1)+' '+y.toFixed(1)+') rotate('+rot+')">'+
+      '<path d="M0 0 C11 '+(len*.25)+' 10 '+(len*.7)+' 0 '+len+' C-10 '+(len*.7)+' -11 '+(len*.25)+' 0 0Z" fill="'+(i%2?'#2F5A3A':'#4E7F4F')+'"/>'+
+      '<path d="M0 3 V'+(len-4)+'" stroke="#9DBB8A" stroke-width=".8"/></g>';
+    if(i<n-1){var bx=x+W/n/2, by=8+2*(1-bx/W)*(bx/W)*18;
+      out+='<circle cx="'+bx.toFixed(1)+'" cy="'+(by+10).toFixed(1)+'" r="5" fill="#E8902A"/><circle cx="'+bx.toFixed(1)+'" cy="'+(by+19).toFixed(1)+'" r="4" fill="#F2B33D"/>';}
+  }
+  svg.innerHTML=out;
+
+  // Countdown to 6 Dec 2026, 11:30 IST
+  var target=new Date('2026-12-06T11:30:00+05:30').getTime();
+  var el={d:document.getElementById('cd-d'),h:document.getElementById('cd-h'),m:document.getElementById('cd-m'),s:document.getElementById('cd-s')};
+  function pad(v){return String(v).padStart(2,'0')}
+  function tick(){
+    var ms=Math.max(0,target-Date.now()), s=Math.floor(ms/1000);
+    el.d.textContent=Math.floor(s/86400); el.h.textContent=pad(Math.floor(s%86400/3600));
+    el.m.textContent=pad(Math.floor(s%3600/60)); el.s.textContent=pad(s%60);
+    if(ms===0){document.getElementById('count-label').textContent='Today is the day';}
+  }
+  tick(); setInterval(tick,1000);
+
+  // Falling jasmine and marigold petals
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var c=document.getElementById('petals'), x=c.getContext('2d'), P=[], dpr=Math.min(2,window.devicePixelRatio||1);
+  function size(){c.width=innerWidth*dpr; c.height=innerHeight*dpr; x.setTransform(dpr,0,0,dpr,0,0)}
+  size(); addEventListener('resize',size);
+  var cols=['#FFFDF6','#FFF8E6','#F2B33D','#E8902A'];
+  function add(burst){P.push({x:Math.random()*innerWidth,y:burst?-20-Math.random()*innerHeight*.5:-20,r:3+Math.random()*4,
+    vy:.4+Math.random()*.7,vx:-.3+Math.random()*.6,a:Math.random()*6.28,va:-.02+Math.random()*.04,sw:Math.random()*6.28,c:cols[Math.floor(Math.random()*cols.length)]})}
+  for(var k=0;k<14;k++) add(true);
+  document.querySelector('.open').addEventListener('click',function(){for(var k=0;k<40;k++) add(true)});
+  function frame(){
+    x.clearRect(0,0,innerWidth,innerHeight);
+    if(P.length<18 && Math.random()<.03) add(false);
+    for(var i=P.length-1;i>=0;i--){var p=P[i]; p.sw+=.02; p.x+=p.vx+Math.sin(p.sw)*.4; p.y+=p.vy; p.a+=p.va;
+      x.save(); x.translate(p.x,p.y); x.rotate(p.a); x.fillStyle=p.c; x.globalAlpha=.85;
+      x.beginPath(); x.ellipse(0,0,p.r,p.r*.55,0,0,6.283); x.fill();
+      x.strokeStyle='rgba(176,130,39,.35)'; x.lineWidth=.6; x.stroke(); x.restore();
+      if(p.y>innerHeight+20) P.splice(i,1);}
+    requestAnimationFrame(frame);
+  }
+  frame();
 })();
 </script>
 </body>
